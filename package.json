@@ -1,0 +1,23 @@
+{
+  "name": "josh-jam-wedding-invite",
+  "version": "1.0.0",
+  "description": "Josh and Jam's Wedding Invite website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshpi/josh-jam-wedding-invite.git"
+  },
+  "author": "Joshua Ho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshpi/josh-jam-wedding-invite/issues"
+  },
+  "homepage": "https://github.com/joshpi/josh-jam-wedding-invite#readme",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  }
+}
