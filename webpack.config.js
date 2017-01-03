@@ -1,8 +1,7 @@
 module.exports = {
   entry: {
     main: [
-      './source/script1.js',
-      './source/script2.js'
+      './source/main.js'
     ]
   },
   output: {
@@ -11,9 +10,12 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel'
+        loader: 'babel-loader',
+        query: {
+          presets:['react']
+        }
       }
     ]
   }
