@@ -1,3 +1,6 @@
+var path = require( 'path' );
+var webpack = require( 'webpack' );
+
 module.exports = {
   entry: {
     main: [
@@ -5,17 +8,21 @@ module.exports = {
     ]
   },
   output: {
-    filename: './public/[name].js'
+    filename: './main.js',
+    path: path.join( __dirname, 'public' ),
+    publicPath: '/public/'
+  },
+  watch: true,
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
   },
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets:['react']
-        }
+        include: path.join( __dirname, 'source' ),
+        loader: 'react-hot!babel-loader'
       }
     ]
   }

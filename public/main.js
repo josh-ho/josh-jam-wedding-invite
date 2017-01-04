@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/public/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -50,6 +50,8 @@
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/mnt/c/Users/Josh/Desktop/Josh/josh-jam-wedding-invite/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/mnt/c/Users/Josh/Desktop/Josh/josh-jam-wedding-invite/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -67,7 +69,11 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	__webpack_require__(180);
+
 	_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('container'));
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/mnt/c/Users/Josh/Desktop/Josh/josh-jam-wedding-invite/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "main.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 2 */
@@ -21480,6 +21486,8 @@
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/mnt/c/Users/Josh/Desktop/Josh/josh-jam-wedding-invite/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/mnt/c/Users/Josh/Desktop/Josh/josh-jam-wedding-invite/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -21509,7 +21517,7 @@
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
 	    _this.state = {
-	      messages: ['test state', 'test state 2']
+	      messages: ['test state - test live reloading 2 test eee 1 3 5', 'eee - test state 2']
 	    };
 	    return _this;
 	  }
@@ -21520,7 +21528,7 @@
 	      var messageNodes = this.state.messages.map(function (message) {
 	        return _react2.default.createElement(
 	          'div',
-	          null,
+	          { style: { color: 'red' } },
 	          message
 	        );
 	      });
@@ -21537,6 +21545,14 @@
 	}(_react2.default.Component);
 
 	exports.default = App;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/mnt/c/Users/Josh/Desktop/Josh/josh-jam-wedding-invite/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "App.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 180 */
+/***/ function(module, exports) {
+
+	
 
 /***/ }
 /******/ ]);
