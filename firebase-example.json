@@ -1,0 +1,22 @@
+{
+  "Users": {
+    "0" : {
+      "first_name" : ["Joshua"],
+      "last_name" : "Ho",
+      "email" : "josh.ho.2@gmail.com",
+      "reserved_seats" : 2,
+      "confirmed_seats" : 2,
+      "isConfirmed": false,
+      "rsvp" : []
+    },
+    "1" : {
+      "first_name" : ["Joshua", "Ives", "Ayra", "Addison"],
+      "last_name" : "Korovesi",
+      "email" : "joshua.j.korovesi@gmail.com",
+      "reserved_seats" : 4,
+      "confirmed_seats" : 4,
+      "isConfirmed": false,
+      "rsvp" : []
+    }
+  }
+}
