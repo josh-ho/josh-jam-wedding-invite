@@ -1,7 +1,5 @@
 import React from 'react';
-import muiThemeable from 'material-ui/styles/muiThemeable';
-
-import Login from './Login.jsx';
+import Login from './Login';
 
 import Firebase from 'firebase';
 import _ from 'lodash';
@@ -16,6 +14,11 @@ class Form extends React.Component {
       isLoggedIn: false
     };
 
+    this.handleLogin = this.handleLogin.bind( this );
+  }
+
+  componentWillMount() {
+    /*eslint-disable*/
     this.firebaseRef = firebase.database().ref( 'Users' );
     this.firebaseRef.on( "value", (dataCallback) => {
       var users = dataCallback.val();
@@ -23,8 +26,7 @@ class Form extends React.Component {
         users: users
       });
     } );
-
-    this.handleLogin = this.handleLogin.bind( this );
+    /*eslint-enable*/
   }
 
   handleLogin( value ) {
